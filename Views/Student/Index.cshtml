@@ -1,0 +1,19 @@
+﻿
+@model BindDropDownMVC.Models.Student
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Bind DropdownList Details</title>
+</head>
+<body>
+    <div>
+        Select User: @Html.DropDownListFor(m => m.UserId, new SelectList(Model.usersinfo, "UserId", "Education"), "Select Education")
+    </div>
+</body>
+</html>
